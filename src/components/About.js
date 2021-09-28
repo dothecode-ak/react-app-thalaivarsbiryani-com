@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 const About = (props) => {
     const title = props.title;
-    const display=props.display;
+    const display = props.display;
     useEffect(() => {
         document.title = title;
     });
     return (<>
         <div id="about">
-            <p className="menuTextHead" style={{display:display}}>ABOUT US</p>
+            <p className="menuTextHead" style={{ display: display }}>ABOUT US</p>
             <img className="aboutImg" src="assets/About.png" alt="" />
             <div className="aboutDownText">
                 <p className="aboutText">Inspired by the tale of Chinnasami Selvam and being biryani lovers,
@@ -26,6 +26,10 @@ const About = (props) => {
                     he had created for the Nizams and perfected his
                     21 spice masala by incorporating the traditions
                     of Nellore and his Tamil roots.</p>
+
+                <p className="shareHeadtext">Strong roots, flavourful biryanis.
+                    Thalaivars</p>
+
             </div>
         </div>
     </>);

@@ -9,6 +9,7 @@ import Menu from './components/Menu';
 import Error from './components/error';
 import About from './components/About';
 import Conatct from './components/Conatct';
+import Footer from './components/Footer';
 import {
   BrowserRouter as Router,
   Switch,
@@ -32,13 +33,6 @@ document.title="Home of the Original 21 Spice Biryani"
           <Navbar />
             <About title="About | Home of the Original 21 Spice Biryani" display="none"/>
           </Route>
-          {/* <Route path="/home" exact >
-          <Navbar />
-          <Banner/>
-          <Menu/>
-          <About/>
-            <Home title="Home | Home of the Original 21 Spice Biryani"/>
-          </Route> */}
           <Route path="/contact" exact >
           <Navbar />
             <Conatct title="Contact | Home of the Original 21 Spice Biryani"/>
@@ -47,10 +41,13 @@ document.title="Home of the Original 21 Spice Biryani"
           <Navbar />
           <Banner/>
           <Menu/>
+          <Conatct/>
           <About/>
           <Home title="Home | Home of the Original 21 Spice Biryani"/>
+          <Footer/>
           </Route>
           <Route component={Error} />
+        
         </Switch>
       </>
     </Router>

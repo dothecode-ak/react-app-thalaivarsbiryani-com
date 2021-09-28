@@ -11,9 +11,10 @@
 .StarterText,
 .GraviesText,
 .ExtramenuText,
-#about {
+#about,
+.contact {
     text-align: center;
-    font-size: 3.25rem;
+    font-size: 3.05rem;
     color: #520359 !important;
 }
 
@@ -52,6 +53,15 @@
     width: 60%;
     text-align: center;
     margin: 0 auto;
+}
+
+.shareLinkList img {
+    padding: 10px;
+    width: 78px;
+}
+
+.shareLinkList {
+    text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -98,7 +108,8 @@
     .StarterText,
     .GraviesText,
     .ExtramenuText,
-    #about {
+    #about,
+    .contact {
         text-align: center;
         font-size: 1.35rem;
         color: #520359 !important;
@@ -110,7 +121,8 @@
     .StarterText,
     .GraviesText,
     .ExtramenuText,
-    #about {
+    #about,
+    .contact {
         text-align: center;
         font-size: 3.05rem;
         color: #520359 !important;

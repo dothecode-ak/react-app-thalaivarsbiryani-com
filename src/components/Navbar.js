@@ -2,6 +2,10 @@ import React from 'react';
 import { Navbar, Nav, Container, NavLink } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 function NavbarComponent() {
+  function LinkTab(Link)
+  {
+    window.open(Link);
+  }
   return (
     <>
       <Navbar collapseOnSelect expand="lg">
@@ -21,8 +25,8 @@ function NavbarComponent() {
                   Menu
                 </NavLink>
               </LinkContainer>
-              <Nav.Link href="#order-now">Order Now</Nav.Link>
-              <Nav.Link href="#bulk-orders">Bulk Orders</Nav.Link>
+              <Nav.Link onClick={()=>LinkTab('https://www.swiggy.com/search?q=Thalaivars+Biryani')}>Order Now</Nav.Link>
+              <Nav.Link onClick={()=>LinkTab('https://forms.gle/ePribhLvTBCkFEb27')}>Bulk Orders</Nav.Link>
               <LinkContainer to="/contact">
                 <NavLink>
                   Contact
@@ -33,7 +37,7 @@ function NavbarComponent() {
                   About
                 </NavLink>
               </LinkContainer>
-              <Nav.Link href="#feedback">Feedback</Nav.Link>
+              <Nav.Link onClick={()=>LinkTab('https://forms.gle/455DuaJRsK3Y5kmP6')}>Feedback</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
