@@ -4,6 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 import React,{useEffect} from 'react';
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
+import Home from './components/Home';
 import Menu from './components/Menu';
 import Error from './components/error';
 import About from './components/About';
@@ -31,6 +32,13 @@ document.title="Home of the Original 21 Spice Biryani"
           <Navbar />
             <About title="About | Home of the Original 21 Spice Biryani" display="none"/>
           </Route>
+          {/* <Route path="/home" exact >
+          <Navbar />
+          <Banner/>
+          <Menu/>
+          <About/>
+            <Home title="Home | Home of the Original 21 Spice Biryani"/>
+          </Route> */}
           <Route path="/contact" exact >
           <Navbar />
             <Conatct title="Contact | Home of the Original 21 Spice Biryani"/>
@@ -38,13 +46,15 @@ document.title="Home of the Original 21 Spice Biryani"
           <Route path="/" exact>
           <Navbar />
           <Banner/>
-          <Menu title="Home of the Original 21 Spice Biryani"/>
+          <Menu/>
           <About/>
-          </Route >
+          <Home title="Home | Home of the Original 21 Spice Biryani"/>
+          </Route>
           <Route component={Error} />
         </Switch>
       </>
     </Router>
   );
+
 }
 export default App;
