@@ -70,6 +70,7 @@
     .StarterText p,
     .GraviesText p,
     .ExtramenuText p,
+    .contact,
     #about p {
         font-size: 15px !important;
     }
