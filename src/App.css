@@ -14,7 +14,7 @@
 #about,
 .contact {
     text-align: center;
-    font-size: 3.05rem;
+    font-size: 17px;
     color: #520359 !important;
 }
 
@@ -112,7 +112,7 @@
     #about,
     .contact {
         text-align: center;
-        font-size: 1.35rem;
+        font-size: 17px;
         color: #520359 !important;
     }
 }
@@ -125,7 +125,7 @@
     #about,
     .contact {
         text-align: center;
-        font-size: 1.671rem;
+        font-size: 27px;
         color: #520359 !important;
     }
     #TBWLogo {
