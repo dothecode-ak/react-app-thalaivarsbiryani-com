@@ -5,7 +5,7 @@ const Menu = (props) => {
   useEffect(() => {
     document.title = title;
   });
-  const [finalMenuTxt,finalStarterText,finalGraviesText,finalExtraText] = [MenuTxt.main_menu, MenuTxt.startes,MenuTxt.gravies_bread,MenuTxt.extras_menu];
+  const [finalMenuTxt, finalStarterText, finalGraviesText, finalExtraText] = [MenuTxt.main_menu, MenuTxt.startes, MenuTxt.gravies_bread, MenuTxt.extras_menu];
 
 
   const display_prop = props.display;
@@ -17,7 +17,7 @@ const Menu = (props) => {
         {
           finalMenuTxt.map((product, index) =>
             <div className='menu_subText' key={index}>
-              <p>{product.product_name} {product.dot} {product.price}</p>
+              <p>{product.product_name.padEnd((parseInt(product.product_name.length) + (product.dot)), '.')} {product.price}</p>
             </div>
           )
         }
@@ -27,7 +27,7 @@ const Menu = (props) => {
         {
           finalStarterText.map((product, index) =>
             <div className='menu_subText' key={index}>
-              <p>{product.product_name} {product.dot} {product.price}</p>
+              <p>{product.product_name.padEnd((parseInt(product.product_name.length) + (product.dot)), '.')} {product.price}</p>
             </div>
           )
         }
@@ -37,7 +37,7 @@ const Menu = (props) => {
         {
           finalGraviesText.map((product, index) =>
             <div className='menu_subText' key={index}>
-              <p>{product.product_name} {product.dot} {product.price}</p>
+              <p>{product.product_name.padEnd((parseInt(product.product_name.length) + (product.dot)), '.')} {product.price}</p>
             </div>
           )
         }
@@ -48,12 +48,12 @@ const Menu = (props) => {
         {
           finalExtraText.map((product, index) =>
             <div className='menu_subText' key={index}>
-              <p>{product.product_name} {product.dot} {product.price}</p>
+              <p>{product.product_name.padEnd((parseInt(product.product_name.length) + (product.dot)), '.')} {product.price}</p>
             </div>
           )
         }
       </div>
-     
+
     </div>
 
   </>);
