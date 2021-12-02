@@ -3,7 +3,7 @@ const MenuTxt = {
         {
             product_name: "Thalaivar Chicken Dum Biryani",
             price: 269,
-            dot: 25
+            dot: 26
         },
         {
             product_name: "Thalaivar Boneless Chicken Biryani",
